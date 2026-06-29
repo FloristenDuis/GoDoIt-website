@@ -366,8 +366,8 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:400;letter-spacing:-.015em;line
   .nav-inner,.nav.over .nav-inner{height:64px}
   .nav-mobile{inset:64px 0 auto 0}
 
-  /* hero photo: the subject sits on the right — pin the image to the right edge */
-  .hero-media img{object-position:100% 45%!important;transform:none!important}
+  /* hero photo: center the man + dog (they sit at ~70% of the frame) */
+  .hero-media img{object-position:78% 50%!important;transform:none!important}
 
   /* page heroes: keep the title clear of the fixed nav bar */
   .page-hero{padding-top:104px}
@@ -382,4 +382,6 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:400;letter-spacing:-.015em;line
   .hero-meta{gap:20px;margin-top:26px}
   .hero-meta .m b{font-size:19px}
   .hero-meta .m span{font-size:10px}
+  /* tighter newsletter padding so the Instagram button centers cleanly */
+  .newsletter{padding:34px 20px}
 }
