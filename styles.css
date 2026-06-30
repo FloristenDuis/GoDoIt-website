@@ -174,7 +174,7 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:400;letter-spacing:-.015em;line
 /* short viewports (small/scaled laptops): anchor heroes below the nav so the title never overlaps the logo */
 @media(max-height:860px){
   .hero{min-height:0;align-items:flex-start;padding:116px 0 60px}
-  .page-hero{min-height:0;padding-top:116px;padding-bottom:48px}
+  .page-hero{padding-top:104px}
 }
 
 /* compact page hero */
