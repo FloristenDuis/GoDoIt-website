@@ -208,6 +208,21 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:400;letter-spacing:-.015em;line
 .card-link .arr{transition:transform .25s var(--ease)}
 .card:hover .card-link .arr{transform:translateX(5px)}
 
+/* photo tiles (community "what to expect") */
+.ptile{position:relative;display:flex;align-items:flex-end;min-height:270px;border-radius:var(--r);overflow:hidden;color:#fff;
+  transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
+.ptile:hover{transform:translateY(-6px);box-shadow:var(--sh-lg)}
+.ptile>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;transition:transform .8s var(--ease)}
+.ptile::after{content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(0deg,rgba(20,28,18,.92),rgba(20,28,18,.55) 38%,rgba(20,28,18,.12) 72%)}
+.ptile:hover>img{transform:scale(1.05)}
+.ptile-cap{position:relative;z-index:2;padding:22px 24px}
+.ptile-cap h3{color:#fff;font-size:21px;margin:0 0 6px}
+.ptile-cap p{color:rgba(255,255,255,.86);font-size:14px;margin:0}
+.ptile-badge{position:absolute;top:14px;left:14px;z-index:2;display:inline-flex;align-items:center;gap:7px;
+  background:var(--clay);color:#fff;font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.08em;
+  text-transform:uppercase;padding:6px 12px;border-radius:var(--r-pill)}
+
 /* feature card (icon top) */
 .feature{display:flex;flex-direction:column;height:100%}
 .feature .ic{width:52px;height:52px;border-radius:14px;background:var(--sand-soft);display:grid;place-items:center;font-size:22px;margin-bottom:20px;border:1px solid var(--border)}
