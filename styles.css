@@ -202,7 +202,8 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:400;letter-spacing:-.015em;line
 .card .num{font-family:var(--mono);font-size:12px;color:var(--clay);letter-spacing:.1em}
 .card h3{font-size:24px;margin:10px 0 10px}
 .card p{color:var(--stone);font-size:15.5px}
-.card .card-img{aspect-ratio:16/11}
+.card .card-img{height:200px;flex:0 0 auto;overflow:hidden}
+@media(max-width:720px){.card .card-img{height:240px}}
 .card-link{display:inline-flex;align-items:center;gap:8px;margin-top:18px;font-weight:600;color:var(--forest);font-size:15px}
 .card-link .arr{transition:transform .25s var(--ease)}
 .card:hover .card-link .arr{transform:translateX(5px)}
