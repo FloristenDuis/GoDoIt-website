@@ -389,6 +389,9 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:400;letter-spacing:-.015em;line
 
   /* hero photo: center the man + dog (they sit at ~70% of the frame) */
   .hero-media img{object-position:78% 50%!important;transform:none!important}
+  /* per-page mobile crops (override the homepage default above) */
+  .hero-media img.crop-dog{object-position:13% 50%!important}
+  .hero-media img.crop-me{object-position:12% 50%!important}
 
   /* page heroes: keep the title clear of the fixed nav bar */
   .page-hero{padding-top:104px}
